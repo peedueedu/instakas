@@ -1,0 +1,710 @@
+@font-face { font-family: proxima; src: url(proxima/reg.woff); }
+@font-face { font-family: proxima; font-weight: bold; src: url(proxima/bold.woff); }
+
+
+*{
+font-family: proxima;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body{
+  background-color: #fafafa;
+}
+
+.header{
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.otsi input{
+  height: 16px;
+  width: 180px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  text-align: center;
+  background-color: #fafafa;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.otsi input:focus {
+    text-align: left;
+    background-color: white;
+}
+
+.logo {
+  background: url('imgs/bgr.png') no-repeat -464px -127px;
+  	width: 30px;
+  	height: 30px;
+    display: inline-block;
+    position: absolute;
+    margin: 25px;
+    margin-left: 15%;
+    padding-right: 20px;
+}
+
+
+
+.logo2 {
+  	background: url('imgs/bgr.png') no-repeat -533px -129px;
+  	width: 107px;
+  	height: 31px;
+    display: inline-block;
+    position: absolute;
+    margin: 25px;
+    margin-left: 20%;
+}
+
+.nav{
+  float: right;
+  margin-right: 18%;
+  margin-top: -25px;
+}
+
+.explore{
+	background: url('imgs/bgr.png') no-repeat -461px -218px;
+	width: 22px;
+	height: 22px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.activity {
+	background: url('imgs/bgr.png') no-repeat -513px -219px;
+	width: 22px;
+	height: 20px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.self {
+	background: url('imgs/bgr.png') no-repeat -565px -219px;
+	width: 22px;
+	height: 21px;
+  display: inline-block;
+}
+
+.bodykas{
+  width: 800px;
+  height: 210px;
+  margin: auto;
+  padding-top: 120px;
+}
+
+
+.bodypilt{
+width: 150px;
+height: 150px;
+border-radius: 100%;
+display: inline-block;
+margin-right: 80px;
+margin-left: 10px;
+margin-top: 5px;
+}
+
+
+
+.bodyinf{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: -15px;
+}
+
+.kasutajanimi {
+  font-size: 30px;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.punktikas{
+	background: url('imgs/icons.png') no-repeat -119px -403px;
+	width: 46px;
+	height: 10px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.bodyinf .punktikas a{
+  border:none;
+  width: 46px;
+  height: 10px;
+}
+
+.pictures{
+  margin-top: -145px;
+  width: 1347px;
+  margin: 0 auto;
+}
+
+.pics{
+  max-width: 73.5%;
+  margin: 0 auto;
+}
+
+.pildid{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+  position:relative;
+  display: inline-block;
+  margin: 0 auto;
+  margin: 15px;
+  }
+
+  .pildid:hover > .piltoverlay {
+      width:100%;
+      height:100%;
+      position:absolute;
+      background-color:#000;
+      opacity:0.3;
+    }
+
+    .pildid:hover > .picstats {
+      display: block;
+      }
+
+.picstats{
+  display: none;
+  margin: auto;
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 1;
+  height: 20px;
+  max-width: 45%;
+}
+
+.picstats span{
+  color: white;
+  position: absolute;
+  z-index: 2;
+  font-size: 21px;
+  font-weight: bolder;
+  margin-left: 25px;
+  margin-top: -4px;
+}
+
+.picstats .hoverlikes{
+background: url('imgs/icons.png') no-repeat -324px -428px;
+width: 19px;
+height: 17px;
+position: absolute;
+z-index: 2;
+margin-left: 0px;
+}
+
+.picstats .hovercomments{
+background: url('imgs/icons.png') no-repeat -303px -427px;
+width: 19px;
+height: 18px;
+position: relative;
+z-index: 2;
+float: right;
+margin-right: 30px;
+}
+
+
+  /* pildi popup */
+  .popuppildikas {
+  background: #fff;
+  width: 90%;
+  height: 66.5%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  }
+
+  .popuppildikas .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  }
+
+  .popuppildikas .pic{
+  height: 100%;
+  width: 65%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  background-color: #f2f2f2;
+  }
+
+.heart {
+  background: url('imgs/icons.png') no-repeat -115px -464px;
+	width: 22px;
+	height: 20px;
+  border: none;
+}
+
+.heart2 {
+  background: url('imgs/icons.png') no-repeat -89px -464px;
+	width: 22px;
+	height: 20px;
+  border: none;
+}
+
+
+
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popuppildikas .close {
+    position: fixed;
+    top: 16%;
+    right: 6%;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+    z-index: 1;
+  }
+
+  .popuppildikas .close:hover {
+    color: red;
+  }
+
+
+  .picoverlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .picoverlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+  }
+
+
+
+
+
+.countpopup {
+  text-decoration: none;
+}
+
+.stats{
+  font-size: 18px;
+  display: inline-block;
+  padding-right: 30px;
+  margin-top: -30px;
+}
+
+.stats a{
+  font-size: inherit !important;
+  color: inherit !important;
+  border: inherit !important;
+  font-weight: inherit !important;
+  margin :0px !important;
+  padding: 0px !important;
+}
+
+.smallname{
+  font-size: 18px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: inline-block;
+}
+
+.bodyinf input[type=submit]{
+  border: 1px solid #1ab2ff;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #1ab2ff;
+  font-weight: bold;
+  background-color: #fafafa;
+  font-size: 15px;
+}
+
+.bodyinf form{display: inline-block;
+
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.popup {
+  margin: 200px auto;
+background: #fff;
+  width: auto;
+  max-width: 35%;
+height: 90px;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  display: none;
+}
+.popup .close:hover {
+  color: red;
+}
+.popup .content {
+  height: auto;
+max-width: 100%;
+}
+
+/* follow popoup shit */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.popupfollow {
+background: #fff;
+max-width: 40%;
+height: auto;
+max-height: 85%;
+min-height: 85%;
+position: absolute;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popupfollow .close {
+  position: fixed;
+  top: 7%;
+  right: 32%;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.popupfollow .close:hover {
+  color: red;
+}
+
+.popupfollow .content .followbutton{
+  border: 1px solid #00aaff;
+  padding: 3px 10px 3px 10px;
+  border-radius: 3px;
+  margin-top: -13px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #00aaff;
+  font-weight: bold;
+  float: right;
+  text-align: center;
+  width: 80px;
+}
+
+
+.followheader h3{
+  color: #4d4d4d;
+  display: inline-block;
+  width: 97%;
+}
+
+
+#playstore{
+  height: 40px;
+  width: 115px;
+}
+
+#appstore{
+  height: 40px;
+  width: 130px;
+}
+
+
+
+
+
+.logout{
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.logout:hover{background-color: #f2f2f2;}
+
+
+/*footer*/
+
+.footer{
+  width: 100%;
+}
+
+.footer p{
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.footer {
+  margin-top: 65px;
+  position: absolute;
+  font-size: 12px;
+}
+
+.footer span{
+  padding-left: 30%;
+}
+
+.footer p:nth-child(1){
+  margin-left: 10%;
+}
+
+p.footer{
+  padding-left: 10px;
+}
+
+
+/* recent activity kastikas*/
+#kast{
+  width: 450px;
+  max-height: 55%;
+  background-color: #ccefff;
+  position: absolute;
+  top: 68px;
+  right: 16.5%;
+  border-radius: 5px;
+ box-shadow: 2px 2px 2px #ccefff;
+overflow-y: scroll;
+}
+
+
+.jobunaut{
+text-align: center;
+vertical-align: middle;
+}
+.triangleee {
+    border-color: transparent transparent #ccefff transparent;
+    border-style: solid;
+    border-width: 0px 15px 15px 15px;
+    height: 0px;
+    width: 0px;
+    position: fixed;
+    top: 55px;
+    right: 21.5%;
+}
+
+.jobunaut p{
+  padding: 0px 20px 0px 20px;
+}
+
+.notiflist{
+text-align: left;
+}
+
+.notiflist:first-child{
+  margin-top: 15px;
+}
+
+.notiflist p{
+  display: inline-block;
+  font-size: 17px;
+  margin: 0;
+  padding: 7px;
+}
+
+.notiflist hr{
+  border-top: 0.5px solid #ccefff;
+  border-bottom: 0.5px solid #ccefff;
+}
+
+.notiflist span{
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.notiflist .profpilt{
+  vertical-align: middle;
+  margin: 0px 5px 0px 10px;
+}
+
+.notiflist .yourpic{
+  float: right;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.notiflist a{
+  text-decoration: none;
+  color: black;
+}
+
+/* upload shit */
+.popupupload {
+  margin: 70px auto;
+background: #fff;
+  width: auto;
+  max-width: 40%;
+height: auto;
+min-height: 70px;
+  position: relative;
+
+}
+
+.popupupload .close {
+  position: fixed;
+  top: 10%;
+  right: 30.5%;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.popupupload .close:hover {
+  color: red;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+
+/* FEEDI PILDI SHIT */
+.feedpics{
+  width: 1347px;
+  height: auto;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: 140px;
+  position: absolute;
+}
+
+.feedpics a{
+  text-decoration: none;
+  color: black;
+}
+
+.feedpic{
+  max-width: 60%;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+}
+
+.feedpic .img img{
+width: 100%;
+max-height: 650px;
+object-fit: contain;
+}
+
+.upper{
+  background-color: white;
+  height: 65px;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.upper p{
+  margin: auto;
+  line-height: 65px;
+  display: inline-block;
+}
+
+.comments{
+  border-top: 1px solid #e6e6e6;
+  height: auto;
+  padding: 20px;
+}
+
+
